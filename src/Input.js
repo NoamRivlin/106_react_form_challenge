@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
-const Input = (props) => {
-    return (
-        <input
-            data-testid={props.testId}
-            value={props.value}
-            type="text"
-            onChange={props.onChange}
-            style={{ marginBottom: 5 }}
-        />
-    )
-}
+const Input = ({ testId, value, onChange }) => {
+  return (
+    <input
+      data-testid={testId}
+      value={value}
+      type='text'
+      onChange={onChange}
+      style={{ marginBottom: 5 }}
+    />
+  );
+};
 
-export default Input
+export default Input;

@@ -1,11 +1,7 @@
-import React from "react";
+import React from 'react';
 
-const Button = (props) => {
-    return (
-        <button style={{ alignSelf: "center" }}>
-            { props.value }
-        </button>
-    )
-}
+const Button = ({ value }) => {
+  return <button style={{ alignSelf: 'center' }}>{value}</button>;
+};
 
-export default Button
+export default Button;
